@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+}
+
+header {
+    background: #111827;
+    color: white;
+    padding: 25px 40px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header p {
+    margin-top: 5px;
+    color: #9ca3af;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* =========================
+    FORMULÁRIO
+========================= */
+
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.form-container h2 {
+    margin-bottom: 25px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.campo label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.campo input,
+.campo select {
+    padding: 11px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.campo input:focus,
+.campo select:focus {
+    outline: 2px solid #2563eb;
+    border-color: transparent;
+}
+
+.form-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+button, a {
+    border: none;
+    border-radius: 7px;
+    padding: 11px 18px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.btn-secondary {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+/* =========================
+    LISTAGEM
+========================= */
+
+.lista-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.lista-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.lista-header h2 {
+    white-space: nowrap;
+}
+
+.busca {
+    width: 300px;
+    padding: 11px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+}
+
+/* =========================
+    TABELA
+========================= */
+
+.tabela-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    background: #f9fafb;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #6b7280;
+}
+
+td {
+    font-size: 14px;
+}
+
+tr:hover {
+    background: #f9fafb;
+}
+
+/* =========================
+    STATUS
+========================= */
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ativo {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.inativo {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* =========================
+    BOTÕES DA TABELA
+========================= */
+
+.acoes {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-editar {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.btn-excluir {
+    background: #f8caca;
+    color: #991b1b;
+}
+
+/* =========================
+    RESPONSIVO
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 20px;
+    }
+
+    main {
+        margin-top: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lista-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .busca {
+        width: 100%;
+    }
+}
